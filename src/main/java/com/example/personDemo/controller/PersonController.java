@@ -36,10 +36,12 @@ public ResponseEntity<List<Person>> getAllPerson(){
 }
 
 @DeleteMapping("/person/{id}")
-public String deleteById(@PathVariable int id){
+public String deleteById(@PathVariable int id) {
     String deletedById = persons.deleteById(id);
     return deletedById;
+
 }
+
 
 
     }
